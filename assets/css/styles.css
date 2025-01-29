@@ -735,6 +735,11 @@ Banner Style
   align-items: center;
 }
 
+.main-banner {
+  border-image: fill 0
+  linear-gradient(0deg, rgba(212,189,172,1) 0%,);
+}
+
 .main-banner h6 {
   font-size: 20px;
   margin-bottom: 15px;
