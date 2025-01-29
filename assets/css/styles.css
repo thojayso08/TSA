@@ -129,7 +129,7 @@ body {
   font-size: 14px;
   color: #42901b;
   background-color: white;
-  border: 1px solid #42901b;
+  border: 0px solid #42901b;
   padding: 12px 30px;
   display: inline-block;
   border-radius: 25px;
@@ -162,7 +162,7 @@ body {
   font-size: 14px;
   color: #fff;
   background-color: #42901b;
-  border: 1px solid #42901b;
+  border: 0px solid #42901b;
   padding: 12px 30px;
   display: inline-block;
   border-radius: 25px;
