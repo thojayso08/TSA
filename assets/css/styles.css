@@ -1000,6 +1000,7 @@ Create NFT Style
   background-size: cover;
   padding: 120px 0px;
   position: relative;
+  place-items: center;
 }
 
 .create-nft .section-heading .line-dec {
