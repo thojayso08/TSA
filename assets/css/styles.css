@@ -573,7 +573,6 @@ Header Style
 
 .header-area.header-sticky {
   min-height: 70px;
-  visibility: hidden;
 }
 
 .header-area.header-sticky .nav li a.active {
