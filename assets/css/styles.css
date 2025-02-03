@@ -333,6 +333,7 @@ Header Style
 */
 
 .background-header {
+  visibility: hidden;
   background-color: none!important;
   height: 70px!important;
   position: fixed!important;
