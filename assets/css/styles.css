@@ -333,7 +333,6 @@ Header Style
 */
 
 .background-header {
-  visibility: hidden;
   background-color: none!important;
   height: 70px!important;
   position: fixed!important;
@@ -596,7 +595,7 @@ Header Style
   }
   .header-area .main-nav {
     background-color: transparent;
-    border-radius: 0px;
+    border-radius: 65px;
   }
   .header-area .main-nav .nav {
     height: auto;
