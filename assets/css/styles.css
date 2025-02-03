@@ -335,7 +335,6 @@ Header Style
 .background-header {
   background-color: none!important;
   height: 70px!important;
-  width: 50%;
   position: fixed!important;
   top: 0!important;
   left: 0;
@@ -619,9 +618,6 @@ Header Style
     position: absolute;
     top: 15px;
     right: 70px;
-  }
-  .header-sticky {
-    width: 50%;
   }
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
