@@ -594,6 +594,7 @@ Header Style
 @media (max-width: 992px) {
   .header-area {
     top: 0;
+    width: 100%;
   }
   .header-area .main-nav {
     background-color: transparent;
@@ -620,7 +621,7 @@ Header Style
     right: 70px;
   }
   .header-sticky {
-    width: 75%;
+    width: 50%;
   }
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
