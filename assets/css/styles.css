@@ -574,6 +574,7 @@ Header Style
 
 .header-area.header-sticky {
   min-height: 70px;
+  visibility: hidden;
 }
 
 .header-area.header-sticky .nav li a.active {
@@ -603,7 +604,7 @@ Header Style
     flex-basis: 100%;
   }
   .header-area .main-nav .logo {
-    position: absolute;
+    position: sticky;
     left: 30px;
     top: 15px;
   }
