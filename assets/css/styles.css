@@ -347,7 +347,7 @@ Header Style
 
 .header-area {
   background-color: transparent;
-  position: sticky;
+  position: absolute;
   height: 70px;
   top: 30px;
   left: 0;
