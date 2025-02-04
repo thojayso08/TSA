@@ -9,7 +9,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
-    <title>Liberty NFT - Author Detail Page</title>
+    <title>About Us - Green Haven</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="shortcut icon" href="../assets/images/logo.png" type="image">
+
 <!--
 
 TemplateMo 577 Liberty Market
@@ -264,79 +266,90 @@ https://templatemo.com/tm-577-liberty-market
     </div>
   </div>
 
-  <div class="create-nft">
-    <div class="container">
+ <div class="create-nft">
+         <div class="contact-container">
+           <div class="left-col">
+             <img style="width: 150px; padding-left: 15px; padding-top: 25px;" class="logo" src="../assets/images/logo.png"/>
+           </div>
+           <div class="right-col">
+              <p>Contact us if you have any queations or concerns?</p>
+          <h1>Contact us</h1>
+              <form id="contact-form" action="https://formspree.io/f/manqjary" method="POST">
+                 <label for="name">Full name</label>
+                 <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+                 <label for="email">Email Address</label>
+                 <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+                 <label for="subject">Subject</label>
+                 <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                 <label for="message">Message</label>
+                 <textarea rows="6" placeholder="Your Message" id="message" name="message" required></textarea>
+      <!--<a href="javascript:void(0)">--><button type="submit" id="submit" name="submit">Send</button><!--</a>-->
+            </form>
+            <div id="error"></div>
+               <div id="success-msg"></div>
+         </div>
+              </div>
+            </div>
+         </div>
+      </div>
+    <footer style="background-color: #ede1d1;">
+    <div class="container p-4">
       <div class="row">
-        <div class="col-lg-8">
-          <div class="section-heading">
-            <div class="line-dec"></div>
-            <h2>Create Your NFT & Put It On The Market.</h2>
-          </div>
+        <div class="col-lg-6 col-md-12 mb-4" style="width: 25%;">
+         <h5 class="mb-3" style="padding-right: 50letter-spacing: 2px; color: #818963;">Green Haven</h5>
+         <img src="../assets/images/logo.png" alt="logo" style="width: 45%">
         </div>
-        <div class="col-lg-4">
-          <div class="main-button">
-            <a href="create.html">Create Your NFT Now</a>
-          </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="mb-3" style="letter-spacing: 2px; color: #818963;">links</h5>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-1">
+              <a href="index.html" style="color: #4f4f4f;">Home</a>
+            </li>
+            <li class="mb-1">
+              <a href="" style="color: #4f4f4f;">About Us</a>
+            </li>
+            <li class="mb-1">
+              <a href="" style="color: #4f4f4f;">Menu</a>
+            </li>
+            <li class="mb-1">
+              <a href="" style="color: #4f4f4f;">Contact Us</a>
+            </li>
+          </ul>
         </div>
-        <div class="col-lg-4">
-          <div class="item first-item">
-            <div class="number">
-              <h6>1</h6>
-            </div>
-            <div class="icon">
-              <img src="assets/images/icon-02.png" alt="">
-            </div>
-            <h4>Set Up Your Wallet</h4>
-            <p>Lorem ipsum dolor sit amet, consectetu dipiscingei elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="item second-item">
-            <div class="number">
-              <h6>2</h6>
-            </div>
-            <div class="icon">
-              <img src="assets/images/icon-04.png" alt="">
-            </div>
-            <h4>Add Your Digital NFT</h4>
-            <p>Lorem ipsum dolor sit amet, consectetu dipiscingei elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="item">
-            <div class="icon">
-              <img src="assets/images/icon-06.png" alt="">
-            </div>
-            <h4>Sell Your NFT &amp; Make Profit</h4>
-            <p>Lorem ipsum dolor sit amet, consectetu dipiscingei elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="mb-1" style="letter-spacing: 2px; color: #818963;">opening hours</h5>
+          <table class="table" style="color: #4f4f4f; border-color: #666;">
+            <tbody>
+              <tr>
+                <td>Mon - Sat:</td>
+                <td>8am - 9pm</td>
+              </tr>
+              <tr>
+                <td>Sun:</td>
+                <td>Closed</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
-  </div>
-
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <p>Copyright © 2022 <a href="#">Liberty</a> NFT Marketplace Co., Ltd. All rights reserved.
-          &nbsp;&nbsp;
-          Designed by <a title="HTML CSS Templates" rel="sponsored" href="https://templatemo.com" target="_blank">TemplateMo</a></p>
-        </div>
-      </div>
+    <div class="text-center p-3">
+      © 2025 Copyright:
+      <a class="text-dark" href="green-haven.org">Green Haven</a>
     </div>
+    <!-- Copyright -->
   </footer>
 
-  <!-- Scripts -->
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!-- End of .container -->
 
-  <script src="assets/js/isotope.min.js"></script>
-  <script src="assets/js/owl-carousel.js"></script>
-
-  <script src="assets/js/tabs.js"></script>
-  <script src="assets/js/popup.js"></script>
-  <script src="assets/js/custom.js"></script>
-  </body>
+      <!-- Scripts -->
+      <!-- Bootstrap core JavaScript -->
+      <script src="vendor/jquery/jquery.min.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+      <script src="assets/js/isotope.min.js"></script>
+      <script src="assets/js/owl-carousel.js"></script>
+      <script src="assets/js/tabs.js"></script>
+      <script src="assets/js/popup.js"></script>
+      <script src="assets/js/custom.js"></script>
+   </body>
 </html>
