@@ -618,9 +618,6 @@ Header Style
     top: 15px;
     right: 70px;
   }
-  .header-area.header-sticky {
-    width: 50%;
-    {+
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
     color: #42901b!important;
