@@ -216,6 +216,19 @@
             }
         }
     </style>
+    <script>
+    function showCategory(categoryId) {
+        // Hide all menu categories
+        let categories = document.querySelectorAll('.menu-category');
+        categories.forEach(category => category.classList.remove('active'));
+
+        // Show the selected category
+        let selectedCategory = document.getElementById(categoryId);
+        if (selectedCategory) {
+            selectedCategory.classList.add('active');
+        }
+    }
+    </script>
     <div class="sidebar">
         <h2>Menu</h2>
         <ul>
@@ -382,7 +395,6 @@
 
         </section>
     </div>
-</div>
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
