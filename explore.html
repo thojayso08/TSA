@@ -14,12 +14,13 @@
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 
   </head>
 
@@ -114,11 +115,6 @@
             background-color: #4CAF50;
             padding: 5px;
             border-radius: 5px;
-        }
-
-        .sidebar ul li a.active {
-            background-color: #4CAF50;  /* Green background for active link */
-            color: white;
         }
 
         .content {
@@ -220,7 +216,7 @@
         }
     </style>
     <script>
-    function showCategory(categoryId, link) {
+    function showCategory(categoryId) {
         // Hide all menu categories
         let categories = document.querySelectorAll('.menu-category');
         categories.forEach(category => category.classList.remove('active'));
@@ -230,22 +226,15 @@
         if (selectedCategory) {
             selectedCategory.classList.add('active');
         }
-
-        // Remove 'active' class from all sidebar links
-        let links = document.querySelectorAll('.sidebar ul li a');
-        links.forEach(link => link.classList.remove('active'));
-
-        // Add 'active' class to the clicked link
-        link.classList.add('active');
     }
     </script>
     <div class="sidebar">
         <h2>Menu</h2>
         <ul>
-            <li><a href="#" onclick="showCategory('appetizers', this)">Appetizers</a></li>
-            <li><a href="#" onclick="showCategory('soup-salad', this)">Soup or Salad</a></li>
-            <li><a href="#" onclick="showCategory('main-courses', this)">Main Courses</a></li>
-            <li><a href="#" onclick="showCategory('desserts', this)">Desserts</a></li>
+            <li><a href="#" onclick="showCategory('appetizers')">Appetizers</a></li>
+            <li><a href="#" onclick="showCategory('soup-salad')">Soup or Salad</a></li>
+            <li><a href="#" onclick="showCategory('main-courses')">Main Courses</a></li>
+            <li><a href="#" onclick="showCategory('desserts')">Desserts</a></li>
         </ul>
     </div>
 
@@ -304,8 +293,24 @@
                         <img src="../assets/images/TSA_VEGE_SOUP.jpg" alt="Vegetable Soup">
                         <div class="details">
                             <h4>Vegetable Soup</h4>
-                            <p>Seasonal vegetables, light broth</p>
-                            <span>$5.49</span>
+                            <p>Hearty vegetable soup with a savory broth.</p>
+                            <span>$7.49</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="../assets/images/TSA_GREEK_SALAD.jpeg" alt="Greek Salad">
+                        <div class="details">
+                            <h4>Greek Salad</h4>
+                            <p>Tomatoes, cucumbers, olives, feta cheese, olive oil dressing.</p>
+                            <span>$9.49</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="../assets/images/TSA_MINESTROME_SOUP.jpg" alt="Minestrone Soup">
+                        <div class="details">
+                            <h4>Minestrone Soup</h4>
+                            <p>Tomatoes, beans, pasta, and vegetables.</p>
+                            <span>$7.99</span>
                         </div>
                     </div>
                 </div>
@@ -315,19 +320,35 @@
                 <h3>Main Courses</h3>
                 <div class="menu-grid">
                     <div class="menu-item">
-                        <img src="../assets/images/TSA_GRILLSTEAK.jpg" alt="Grilled Steak">
+                        <img src="../assets/images/TSA_VEGE_STIR.jpg" alt="Vegetable Stir-Fry">
                         <div class="details">
-                            <h4>Grilled Steak</h4>
-                            <p>10 oz, charbroiled to perfection, served with mashed potatoes and vegetables.</p>
-                            <span>$19.99</span>
+                            <h4>Vegetable Stir-Fry</h4>
+                            <p>Fresh vegetables, tangy soy-ginger sauce.</p>
+                            <span>$12.99</span>
                         </div>
                     </div>
                     <div class="menu-item">
-                        <img src="../assets/images/TSA_VEGETARIAN_PASTA.jpg" alt="Vegetarian Pasta">
+                        <img src="../assets/images/TSA_PARMESAN_EGGPLANT.jpg" alt="Eggplant Parmesan">
                         <div class="details">
-                            <h4>Vegetarian Pasta</h4>
-                            <p>Vegetable pasta, tomato sauce, mozzarella cheese</p>
+                            <h4>Eggplant Parmesan</h4>
+                            <p>Breaded eggplant, marinara sauce, mozzarella.</p>
+                            <span>$13.99</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="../assets/images/TSA_SPAGHETTI_PESTO.jpg" alt="Spaghetti Pesto">
+                        <div class="details">
+                            <h4>Spaghetti Pesto</h4>
+                            <p>Spaghetti noodles, fresh basil, pesto, pine nuts.</p>
                             <span>$14.99</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="../assets/images/TSA_VEGE_BURGER.jpeg" alt="Vegetable Burger">
+                        <div class="details">
+                            <h4>Vegetable Burger</h4>
+                            <p>veggie patty, lettuce, tomato, vegan mayo.</p>
+                            <span>$11.49</span>
                         </div>
                     </div>
                 </div>
@@ -337,25 +358,53 @@
                 <h3>Desserts</h3>
                 <div class="menu-grid">
                     <div class="menu-item">
-                        <img src="../assets/images/TSA_CAKE.jpg" alt="Chocolate Cake">
+                        <img src="../assets/images/TSA_CHOC_CAKE.jpg" alt="Chocolate Cake">
                         <div class="details">
                             <h4>Chocolate Cake</h4>
-                            <p>Decadent chocolate cake with ganache.</p>
+                            <p>chocolate cake, reamy frosting.</p>
+                            <span>$5.99</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="../assets/images/TSA_FRUIT_TART.avif" alt="Fruit Tart">
+                        <div class="details">
+                            <h4>Fruit Tart</h4>
+                            <p>Fresh fruit, buttery tart crust, light glaze.</p>
+                            <span>$6.49</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="../assets/images/TSA_CHOC_MOUSSE.jpg" alt="Vegan Chocolate Mousse">
+                        <div class="details">
+                            <h4>Vegan Chocolate Mousse</h4>
+                            <p>chocolate mousse, avocado, coconut milk.</p>
                             <span>$6.99</span>
                         </div>
                     </div>
                     <div class="menu-item">
-                        <img src="../assets/images/TSA_TIRAMISU.jpg" alt="Tiramisu">
+                        <img src="../assets/images/TSA-FRUIT.jpg" alt="Apple Crumble">
                         <div class="details">
-                            <h4>Tiramisu</h4>
-                            <p>Coffee-flavored dessert with mascarpone.</p>
-                            <span>$7.49</span>
+                            <h4>Apple Crumble</h4>
+                            <p>Baked apples, cinnamon, crumbly oat topping.</p>
+                            <span>$5.49</span>
                         </div>
                     </div>
                 </div>
             </div>
+
         </section>
     </div>
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
-</body>
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+  </body>
 </html>
