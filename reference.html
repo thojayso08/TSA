@@ -12,18 +12,33 @@
             color: black;
         }
     </style>
-    <header>
-        <h1>Green Haven</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="reference.html" class="active">Image Reference</a></li>
-        </ul>
-    </nav>
+    <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/logo.png" alt="">
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                        <li><a class="active" href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="explore.html">Our Menu</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                       <li><a href="reference.html">Reference Page</a></li>
+                    </ul>   
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
     <main>
         <h1>Image Reference</h1>
         <p>This page lists all images used on Green-Haven.org, along with their copyright details.</p>
