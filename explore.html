@@ -214,7 +214,22 @@
         </div>
     </header>
     <!-- ***** Header Area End ***** -->
+    <script>
+    function showCategory(categoryId) {
+        // Hide all menu categories
+        let categories = document.querySelectorAll('.menu-category');
+        categories.forEach(category => category.classList.remove('active'));
 
+        // Hide the image when a side nav link is clicked
+        document.getElementById("initial-image").style.display = "none"; // Hide image
+
+        // Show the selected category
+        let selectedCategory = document.getElementById(categoryId);
+        if (selectedCategory) {
+            selectedCategory.classList.add('active');
+        }
+    }
+</script>
     <div class="sidebar">
         <h2>Menu</h2>
         <ul>
