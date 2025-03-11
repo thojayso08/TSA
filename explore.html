@@ -21,7 +21,9 @@
     <style>
         html {
             background-color: #f5f5dc;
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../assets/images/home-about.jpg);
+            background-image: url(../asssets/images/home-about.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
         }
 
         body {
@@ -41,7 +43,6 @@
             padding-top: 135px;
             position: fixed;
             height: 100vh;
-            padding-right: 200px;
         }
 
         .sidebar h2 {
@@ -213,6 +214,7 @@
         </div>
     </header>
     <!-- ***** Header Area End ***** -->
+
     <div class="sidebar">
         <h2>Menu</h2>
         <ul>
@@ -222,6 +224,7 @@
             <li><a href="#" onclick="showCategory('desserts')">Desserts</a></li>
         </ul>
     </div>
+
     <div class="content">
         <section class="menu">
             <div class="menu-category" id="appetizers">
@@ -390,4 +393,3 @@
       <script src="assets/js/custom.js"></script>
 </body>
 </html>
-   
