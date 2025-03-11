@@ -15,13 +15,36 @@
       <link rel="stylesheet" href="../assets/css/animate.css">
       <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
       <link rel="shortcut icon" href="../assets/images/logo.png" type="image">
-   </head>
-<body>
-    <style>
+      <style>
         p {
             color: black;
         }
-    </style>
+        main {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            width: 80%;
+        }
+        .item {
+            display: flex;
+            justify-content: space-between;
+            width: 48%;
+            margin-bottom: 20px;
+        }
+        .item p {
+            margin: 0;
+            padding: 0;
+        }
+        .item a {
+            color: #007bff;
+        }
+      </style>
+   </head>
+<body>
     <header class="header-area header-sticky">
     <div class="container">
         <div class="row">
@@ -38,7 +61,7 @@
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="explore.html">Our Menu</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
-                       <li><a href="reference.html">Reference Page</a></li>
+                        <li><a href="reference.html">Reference Page</a></li>
                     </ul>   
                     <a class='menu-trigger'>
                         <span>Menu</span>
@@ -49,60 +72,110 @@
         </div>
     </div>
   </header>
+
     <main>
         <h1>Image Reference</h1>
         <p>This page lists all images used on Green-Haven.org, along with their copyright details.</p>
-        <ul>
-            <li>
-                <p>Description: Chocolate Cake</p>
-                <p>Source: <a href="https://cdn.stocksnap.io/img-thumbs/960w/chocolate-cake_XTNRPGQBYL.jpg">StockSnap</a></p>
-            </li>
-            <li>
-                <p>Description: Fruit Tart</p>
-                <p>Source: <a href="https://images.pexels.com/photos/11581120/pexels-photo-11581120.jpeg">Pexels</a></p>
-            </li>
-            <li>
-                <p>Description: Chocolate Mousse</p>
-                <p>Source: <a href="https://content.praleska.eu/content/blog/recipes/2024/8/12/2-minute-super-airy-chocolate-mousse/The-photo-shows-a-dessert-in-a-tall-stemmed-glass-It-is-a-chocolate-mousse.webp">Praleska</a></p>
-            </li>
-            <li>
-                <p>Description: Apple Crumble</p>
-                <p>Source: <a href="https://images.stockcake.com/public/2/1/a/21a03f81-3d57-4a74-8b2f-9e5b47859c4b/apple-crumble-treat-stockcake.jpg">StockCake</a></p>
-            </li>
-            <li>
-                <p>Description: Fresh Salad Bowl</p>
-                <p>Source: <a href="https://images.pexels.com/photos/5639415/pexels-photo-5639415.jpeg">Pexels</a></p>
-            </li>
-            <li>
-                <p>Description: Vegetable Stir Fry</p>
-                <p>Source: <a href="https://live.staticflickr.com/1212/1441383065_fc0ca147f0_b.jpg">Flickr</a></p>
-            </li>
-            <li>
-                <p>Description: Tomato Soup</p>
-                <p>Source: <a href="https://images.pexels.com/photos/5639728/pexels-photo-5639728.jpeg">Pexels</a></p>
-            </li>
-            <li>
-                <p>Description: Vegan Spring Rolls</p>
-                <p>Source: <a href="https://upload.wikimedia.org/wikipedia/commons/b/b7/Vegan_spring_rolls.jpg">Wikimedia Commons</a></p>
-            </li>
-            <li>
-                <p>Description: Mediterranean Dish</p>
-                <p>Source: <a href="https://cyprus-mail.com/wp-content/uploads/2024/04/food-short.jpg">Cyprus Mail</a></p>
-            </li>
-            <li>
-                <p>Description: Eggplant Parmesan</p>
-                <p>Source: <a href="https://upload.wikimedia.org/wikipedia/commons/8/8b/Melanzane_alla_Parmigiana.jpg">Wikimedia Commons</a></p>
-            </li>
-            <li>
-                <p>Description: Spaghetti Pesto</p>
-                <p>Source: <a href="https://cdn12.picryl.com/photo/2016/12/31/spagetti-pesto-basil-9a6333-1024.jpg">Picryl</a></p>
-            </li>
-            <li>
-                <p>Description: Cheeseburger with Vegetables</p>
-                <p>Source: <a href="https://images.pexels.com/photos/20722055/pexels-photo-20722055/free-photo-of-cheeseburger-with-vegetables.jpeg">Pexels</a></p>
-            </li>
-        </ul>
+        <div class="content">
+            <div class="item">
+                <div class="text">
+                    <p>Description: Chocolate Cake</p>
+                </div>
+                <div class="link">
+                    <p>Source: <a href="https://cdn.stocksnap.io/img-thumbs/960w/chocolate-cake_XTNRPGQBYL.jpg">StockSnap</a></p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="text">
+                    <p>Description: Fruit Tart</p>
+                </div>
+                <div class="link">
+                    <p>Source: <a href="https://images.pexels.com/photos/11581120/pexels-photo-11581120.jpeg">Pexels</a></p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="text">
+                    <p>Description: Chocolate Mousse</p>
+                </div>
+                <div class="link">
+                    <p>Source: <a href="https://content.praleska.eu/content/blog/recipes/2024/8/12/2-minute-super-airy-chocolate-mousse/The-photo-shows-a-dessert-in-a-tall-stemmed-glass-It-is-a-chocolate-mousse.webp">Praleska</a></p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="text">
+                    <p>Description: Apple Crumble</p>
+                </div>
+                <div class="link">
+                    <p>Source: <a href="https://images.stockcake.com/public/2/1/a/21a03f81-3d57-4a74-8b2f-9e5b47859c4b/apple-crumble-treat-stockcake.jpg">StockCake</a></p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="text">
+                    <p>Description: Fresh Salad Bowl</p>
+                </div>
+                <div class="link">
+                    <p>Source: <a href="https://images.pexels.com/photos/5639415/pexels-photo-5639415.jpeg">Pexels</a></p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="text">
+                    <p>Description: Vegetable Stir Fry</p>
+                </div>
+                <div class="link">
+                    <p>Source: <a href="https://live.staticflickr.com/1212/1441383065_fc0ca147f0_b.jpg">Flickr</a></p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="text">
+                    <p>Description: Tomato Soup</p>
+                </div>
+                <div class="link">
+                    <p>Source: <a href="https://images.pexels.com/photos/5639728/pexels-photo-5639728.jpeg">Pexels</a></p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="text">
+                    <p>Description: Vegan Spring Rolls</p>
+                </div>
+                <div class="link">
+                    <p>Source: <a href="https://upload.wikimedia.org/wikipedia/commons/b/b7/Vegan_spring_rolls.jpg">Wikimedia Commons</a></p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="text">
+                    <p>Description: Mediterranean Dish</p>
+                </div>
+                <div class="link">
+                    <p>Source: <a href="https://cyprus-mail.com/wp-content/uploads/2024/04/food-short.jpg">Cyprus Mail</a></p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="text">
+                    <p>Description: Eggplant Parmesan</p>
+                </div>
+                <div class="link">
+                    <p>Source: <a href="https://upload.wikimedia.org/wikipedia/commons/8/8b/Melanzane_alla_Parmigiana.jpg">Wikimedia Commons</a></p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="text">
+                    <p>Description: Spaghetti Pesto</p>
+                </div>
+                <div class="link">
+                    <p>Source: <a href="https://cdn12.picryl.com/photo/2016/12/31/spagetti-pesto-basil-9a6333-1024.jpg">Picryl</a></p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="text">
+                    <p>Description: Cheeseburger with Vegetables</p>
+                </div>
+                <div class="link">
+                    <p>Source: <a href="https://images.pexels.com/photos/20722055/pexels-photo-20722055/free-photo-of-cheeseburger-with-vegetables.jpeg">Pexels</a></p>
+                </div>
+            </div>
+        </div>
     </main>
+
     <footer>
         <p>&copy; 2025 Green Haven. All rights reserved.</p>
     </footer>
