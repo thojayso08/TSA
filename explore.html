@@ -1,31 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+  <head>
+
     <meta charset="utf-8">
     <meta name="author" content="templatemo">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
     <title>Our Menu - Green Haven</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
 
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 
-    <style>
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/logo.png" alt="">
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="explore.html" class="active">Menu</a></li>
+                        <li><a href="contact.html">About Us</a></li>
+                    </ul>   
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+   <style>
         html {
-            background-color: #f5f5dc;
-            background-image: url(../asssets/images/home-about.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
+          background-color: #f5f5dc;
         }
-
+     
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
@@ -169,59 +215,11 @@
             }
         }
     </style>
-</head>
-
-<body>
-
-    <!-- ***** Preloader Start ***** -->
-    <div id="js-preloader" class="js-preloader">
-        <div class="preloader-inner">
-            <span class="dot"></span>
-            <div class="dots">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </div>
-    <!-- ***** Preloader End ***** -->
-
-    <!-- ***** Header Area Start ***** -->
-    <header class="header-area header-sticky">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <nav class="main-nav">
-                        <!-- ***** Logo Start ***** -->
-                        <a href="index.html" class="logo">
-                            <img src="assets/images/logo.png" alt="">
-                        </a>
-                        <!-- ***** Logo End ***** -->
-                        <!-- ***** Menu Start ***** -->
-                        <ul class="nav">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="explore.html" class="active">Menu</a></li>
-                            <li><a href="contact.html">About Us</a></li>
-                        </ul>
-                        <a class='menu-trigger'>
-                            <span>Menu</span>
-                        </a>
-                        <!-- ***** Menu End ***** -->
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- ***** Header Area End ***** -->
     <script>
     function showCategory(categoryId) {
         // Hide all menu categories
         let categories = document.querySelectorAll('.menu-category');
         categories.forEach(category => category.classList.remove('active'));
-
-        // Hide the image when a side nav link is clicked
-        document.getElementById("initial-image").style.display = "none"; // Hide image
 
         // Show the selected category
         let selectedCategory = document.getElementById(categoryId);
@@ -229,7 +227,7 @@
             selectedCategory.classList.add('active');
         }
     }
-</script>
+    </script>
     <div class="sidebar">
         <h2>Menu</h2>
         <ul>
@@ -249,7 +247,7 @@
                         <img src="../assets/images/TSA-BRU.jpeg" alt="Bruschetta">
                         <div class="details">
                             <h4>Bruschetta</h4>
-                            <p>Grilled bread, tomatoes, basil, balsamic glaze</p>
+                            <p>Grilled bread, toamtoes, basil, balsamic glaze</p>
                             <span>$6.99</span>
                         </div>
                     </div>
@@ -349,7 +347,7 @@
                         <img src="../assets/images/TSA_VEGE_BURGER.jpeg" alt="Vegetable Burger">
                         <div class="details">
                             <h4>Vegetable Burger</h4>
-                            <p>Veggie patty, lettuce, tomato, vegan mayo.</p>
+                            <p>veggie patty, lettuce, tomato, vegan mayo.</p>
                             <span>$11.49</span>
                         </div>
                     </div>
@@ -363,7 +361,7 @@
                         <img src="../assets/images/TSA_CHOC_CAKE.jpg" alt="Chocolate Cake">
                         <div class="details">
                             <h4>Chocolate Cake</h4>
-                            <p>Chocolate cake, creamy frosting.</p>
+                            <p>chocolate cake, reamy frosting.</p>
                             <span>$5.99</span>
                         </div>
                     </div>
@@ -379,7 +377,7 @@
                         <img src="../assets/images/TSA_CHOC_MOUSSE.jpg" alt="Vegan Chocolate Mousse">
                         <div class="details">
                             <h4>Vegan Chocolate Mousse</h4>
-                            <p>Chocolate mousse, avocado, coconut milk.</p>
+                            <p>chocolate mousse, avocado, coconut milk.</p>
                             <span>$6.99</span>
                         </div>
                     </div>
@@ -396,15 +394,17 @@
 
         </section>
     </div>
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
-    <!-- Scripts -->
-          <!-- Bootstrap core JavaScript -->
-      <script src="vendor/jquery/jquery.min.js"></script>
-      <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-      <script src="assets/js/isotope.min.js"></script>
-      <script src="assets/js/owl-carousel.js"></script>
-      <script src="assets/js/tabs.js"></script>
-      <script src="assets/js/popup.js"></script>
-      <script src="assets/js/custom.js"></script>
-</body>
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+  </body>
 </html>
