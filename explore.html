@@ -2,228 +2,394 @@
 <html lang="en">
 
   <head>
-
     <meta charset="utf-8">
     <meta name="author" content="templatemo">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-
     <title>Our Menu - Green Haven</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
 
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
-  </head>
+    <style>
+      html {
+        background-color: #f5f5dc;
+      }
 
-<body>
+      body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5dc;
+        color: #2e3d34;
+        display: flex;
+      }
 
-  <!-- ***** Preloader Start ***** -->
-  <div id="js-preloader" class="js-preloader">
-    <div class="preloader-inner">
-      <span class="dot"></span>
-      <div class="dots">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-  </div>
-  <!-- ***** Preloader End ***** -->
+      .sidebar {
+        width: 250px;
+        background-color: #3a593f;
+        color: white;
+        padding: 20px;
+        padding-top: 135px;
+        position: fixed;
+        height: 100vh;
+      }
 
-  <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <nav class="main-nav">
-                    <!-- ***** Logo Start ***** -->
-                    <a href="index.html" class="logo">
-                        <img src="assets/images/logo.png" alt="">
-                    </a>
-                    <!-- ***** Logo End ***** -->
-                    <!-- ***** Menu Start ***** -->
-                    <ul class="nav">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="explore.html" class="active">Menu</a></li>
-                        <li><a href="contact.html">About Us</a></li>
-                    </ul>   
-                    <a class='menu-trigger'>
-                        <span>Menu</span>
-                    </a>
-                    <!-- ***** Menu End ***** -->
-                </nav>
-            </div>
-        </div>
-    </div>
-  </header>
-  <!-- ***** Header Area End ***** -->
-   <style>
-        html {
-          background-color: #f5f5dc;
-        }
-     
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5dc;
-            color: #2e3d34;
-            display: flex;
-        }
+      .sidebar h2 {
+        text-align: center;
+      }
 
+      .sidebar ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .sidebar ul li {
+        padding: 10px;
+        border-bottom: 1px solid #4CAF50;
+      }
+
+      .sidebar ul li a {
+        text-decoration: none;
+        color: white;
+        display: block;
+      }
+
+      .sidebar ul li a:hover {
+        background-color: #4CAF50;
+        padding: 5px;
+        border-radius: 5px;
+      }
+
+      .content {
+        margin-left: 270px;
+        padding: 20px;
+        width: calc(100% - 270px);
+        background-image: url(../assets/images/home-about.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;
+        height: 695px;
+        width: 100%;
+        margin-left: 250px;
+      }
+
+      .menu-category {
+        margin-bottom: 30px;
+        display: none; /* Start hidden */
+      }
+
+      .menu-category.active {
+        display: block; /* Show when active */
+      }
+
+      .menu-category h3 {
+        font-size: 24px;
+        color: #3a593f;
+        border-bottom: 2px solid #4CAF50;
+        display: inline-block;
+        padding-bottom: 5px;
+      }
+
+      .menu-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 20px;
+      }
+
+      .menu-item {
+        display: flex;
+        align-items: center;
+        background: white;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        max-width: 100%;
+      }
+
+      .menu-item img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        margin-right: 20px;
+      }
+
+      .details {
+        text-align: left;
+      }
+
+      .details h4 {
+        margin: 0;
+        font-size: 20px;
+        color: #2e3d34;
+      }
+
+      .details p {
+        font-size: 14px;
+        color: #666;
+        margin: 5px 0;
+      }
+
+      .details span {
+        font-weight: bold;
+        color: #4CAF50;
+      }
+
+      /* Mobile responsiveness */
+      @media (max-width: 768px) {
         .sidebar {
-            width: 250px;
-            background-color: #3a593f;
-            color: white;
-            padding: 20px;
-            padding-top: 135px;
-            position: fixed;
-            height: 100vh;
-        }
-
-        .sidebar h2 {
-            text-align: center;
-        }
-
-        .sidebar ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .sidebar ul li {
-            padding: 10px;
-            border-bottom: 1px solid #4CAF50;
-        }
-
-        .sidebar ul li a {
-            text-decoration: none;
-            color: white;
-            display: block;
-        }
-
-        .sidebar ul li a:hover {
-            background-color: #4CAF50;
-            padding: 5px;
-            border-radius: 5px;
+          width: 200px;
+          padding: 10px;
+          padding-top: 135px;
         }
 
         .content {
-          margin-left: 270px;
-          padding: 20px;
-          width: calc(100% - 270px); 
-          background-image: url(../assets/images/home-about.jpg);
-          background-size: cover;
-          background-repeat: no-repeat;
-          height:  100%;
-          height: 695px;
-          width: 100%;
-          margin-left: 250px;
-        }
-
-        .menu-category {
-            margin-bottom: 30px;
-            display: none; /* Start hidden */
-        }
-
-        .menu-category.active {
-            display: block; /* Show when active */
-        }
-
-        .menu-category h3 {
-            font-size: 24px;
-            color: #3a593f;
-            border-bottom: 2px solid #4CAF50;
-            display: inline-block;
-            padding-bottom: 5px;
+          margin-left: 210px;
+          width: calc(100% - 210px);
         }
 
         .menu-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-            padding: 20px;
-        }
-
-        .menu-item {
-            display: flex;
-            align-items: center;
-            background: white;
-            padding: 15px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            max-width: 100%;
+          grid-template-columns: 1fr; /* Stack items vertically on mobile */
         }
 
         .menu-item img {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            margin-right: 20px;
+          width: 60px;
+          height: 60px;
         }
+      }
 
-        .details {
-            text-align: left;
+      /* Larger desktop responsiveness */
+      @media (max-width: 1024px) {
+        .menu-grid {
+          grid-template-columns: repeat(2, 1fr); /* 2 items per row on tablets */
         }
-
-        .details h4 {
-            margin: 0;
-            font-size: 20px;
-            color: #2e3d34;
-        }
-
-        .details p {
-            font-size: 14px;
-            color: #666;
-            margin: 5px 0;
-        }
-
-        .details span {
-            font-weight: bold;
-            color: #4CAF50;
-        }
-
-        /* Mobile responsiveness */
-        @media (max-width: 768px) {
-            .sidebar {
-                width: 200px;
-                padding: 10px;
-                padding-top: 135px;
-            }
-
-            .content {
-                margin-left: 210px;
-                width: calc(100% - 210px);
-            }
-
-            .menu-grid {
-                grid-template-columns: 1fr; /* Stack items vertically on mobile */
-            }
-
-            .menu-item img {
-                width: 60px;
-                height: 60px;
-            }
-        }
-
-        /* Larger desktop responsiveness */
-        @media (max-width: 1024px) {
-            .menu-grid {
-                grid-template-columns: repeat(2, 1fr); /* 2 items per row on tablets */
-            }
-        }
+      }
     </style>
+  </head>
+
+  <body>
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+      <div class="preloader-inner">
+        <span class="dot"></span>
+        <div class="dots">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="main-nav">
+              <!-- ***** Logo Start ***** -->
+              <a href="index.html" class="logo">
+                <img src="assets/images/logo.png" alt="">
+              </a>
+              <!-- ***** Logo End ***** -->
+              <!-- ***** Menu Start ***** -->
+              <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="explore.html" class="active">Menu</a></li>
+                <li><a href="contact.html">About Us</a></li>
+              </ul>
+              <a class="menu-trigger">
+                <span>Menu</span>
+              </a>
+              <!-- ***** Menu End ***** -->
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <div class="sidebar">
+      <h2>Menu</h2>
+      <ul>
+        <li><a href="#" onclick="showCategory('appetizers')">Appetizers</a></li>
+        <li><a href="#" onclick="showCategory('soup-salad')">Soup or Salad</a></li>
+        <li><a href="#" onclick="showCategory('main-courses')">Main Courses</a></li>
+        <li><a href="#" onclick="showCategory('desserts')">Desserts</a></li>
+      </ul>
+    </div>
+
+    <div class="content">
+      <section class="menu">
+        <div class="menu-category" id="appetizers">
+          <h3>Appetizers</h3>
+          <div class="menu-grid">
+            <div class="menu-item">
+              <img src="../assets/images/TSA-BRU.jpeg" alt="Bruschetta">
+              <div class="details">
+                <h4>Bruschetta</h4>
+                <p>Grilled bread, toamtoes, basil, balsamic glaze</p>
+                <span>$6.99</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img src="../assets/images/TSA_STUFFED_MUSH.jpg" alt="Stuffed Mushrooms">
+              <div class="details">
+                <h4>Stuffed Mushrooms</h4>
+                <p>Mushrooms, spinach, cheese, herbs</p>
+                <span>$7.99</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img src="../assets/images/TSA_GUAC.jpg" alt="Guacamole">
+              <div class="details">
+                <h4>Guacamole</h4>
+                <p>Fresh avocado, lime, cilantro, tomatoes, tortilla chips.</p>
+                <span>$5.99</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img src="../assets/images/TSA_SPRING.jpg" alt="Vegetarian Spring Rolls">
+              <div class="details">
+                <h4>Vegetarian Spring Rolls</h4>
+                <p>Rice paper rolls, veggies, dipping sauce.</p>
+                <span>$6.49</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-category" id="soup-salad">
+          <h3>Soup or Salad</h3>
+          <div class="menu-grid">
+            <div class="menu-item">
+              <img src="../assets/images/TSA_CEASAR.jpg" alt="Caesar Salad">
+              <div class="details">
+                <h4>Caesar Salad</h4>
+                <p>Crisp lettuce, parmesan cheese, and Caesar dressing.</p>
+                <span>$8.99</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img src="../assets/images/TSA_VEGE_SOUP.jpg" alt="Vegetable Soup">
+              <div class="details">
+                <h4>Vegetable Soup</h4>
+                <p>Hearty vegetable soup with a savory broth.</p>
+                <span>$7.49</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img src="../assets/images/TSA_GREEK_SALAD.jpeg" alt="Greek Salad">
+              <div class="details">
+                <h4>Greek Salad</h4>
+                <p>Tomatoes, cucumbers, olives, feta cheese, olive oil dressing.</p>
+                <span>$9.49</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img src="../assets/images/TSA_MINESTROME_SOUP.jpg" alt="Minestrone Soup">
+              <div class="details">
+                <h4>Minestrone Soup</h4>
+                <p>Tomatoes, beans, pasta, and vegetables.</p>
+                <span>$7.99</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-category" id="main-courses">
+          <h3>Main Courses</h3>
+          <div class="menu-grid">
+            <div class="menu-item">
+              <img src="../assets/images/TSA_VEGE_STIR.jpg" alt="Vegetable Stir-Fry">
+              <div class="details">
+                <h4>Vegetable Stir-Fry</h4>
+                <p>Fresh vegetables, tangy soy-ginger sauce.</p>
+                <span>$12.99</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img src="../assets/images/TSA_PARMESAN_EGGPLANT.jpg" alt="Eggplant Parmesan">
+              <div class="details">
+                <h4>Eggplant Parmesan</h4>
+                <p>Breaded eggplant, marinara sauce, mozzarella.</p>
+                <span>$13.99</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img src="../assets/images/TSA_SPAGHETTI_PESTO.jpg" alt="Spaghetti Pesto">
+              <div class="details">
+                <h4>Spaghetti Pesto</h4>
+                <p>Spaghetti noodles, fresh basil, pesto, pine nuts.</p>
+                <span>$14.99</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img src="../assets/images/TSA_VEGE_BURGER.jpeg" alt="Vegetable Burger">
+              <div class="details">
+                <h4>Vegetable Burger</h4>
+                <p>veggie patty, lettuce, tomato, vegan mayo.</p>
+                <span>$11.49</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-category" id="desserts">
+          <h3>Desserts</h3>
+          <div class="menu-grid">
+            <div class="menu-item">
+              <img src="../assets/images/TSA_CHOC_CAKE.jpg" alt="Chocolate Cake">
+              <div class="details">
+                <h4>Chocolate Cake</h4>
+                <p>chocolate cake, creamy frosting.</p>
+                <span>$5.99</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img src="../assets/images/TSA_FRUIT_TART.avif" alt="Fruit Tart">
+              <div class="details">
+                <h4>Fruit Tart</h4>
+                <p>Fresh fruit, buttery tart crust, light glaze.</p>
+                <span>$6.49</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img src="../assets/images/TSA_CHOC_MOUSSE.jpg" alt="Vegan Chocolate Mousse">
+              <div class="details">
+                <h4>Vegan Chocolate Mousse</h4>
+                <p>chocolate mousse, avocado, coconut milk.</p>
+                <span>$6.99</span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img src="../assets/images/TSA-FRUIT.jpg" alt="Apple Crumble">
+              <div class="details">
+                <h4>Apple Crumble</h4>
+                <p>Baked apples, cinnamon, crumbly oat topping.</p>
+                <span>$5.49</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script>
-    function showCategory(categoryId) {
+      function showCategory(categoryId) {
         // Hide all menu categories
         let categories = document.querySelectorAll('.menu-category');
         categories.forEach(category => category.classList.remove('active'));
@@ -231,187 +397,9 @@
         // Show the selected category
         let selectedCategory = document.getElementById(categoryId);
         if (selectedCategory) {
-            selectedCategory.classList.add('active');
+          selectedCategory.classList.add('active');
         }
-    }
+      }
     </script>
-    <div class="sidebar">
-        <h2>Menu</h2>
-        <ul>
-            <li><a href="#" onclick="showCategory('appetizers')">Appetizers</a></li>
-            <li><a href="#" onclick="showCategory('soup-salad')">Soup or Salad</a></li>
-            <li><a href="#" onclick="showCategory('main-courses')">Main Courses</a></li>
-            <li><a href="#" onclick="showCategory('desserts')">Desserts</a></li>
-        </ul>
-    </div>
-
-    <div class="content">
-        <section class="menu">
-            <div class="menu-category" id="appetizers">
-                <h3>Appetizers</h3>
-                <div class="menu-grid">
-                    <div class="menu-item">
-                        <img src="../assets/images/TSA-BRU.jpeg" alt="Bruschetta">
-                        <div class="details">
-                            <h4>Bruschetta</h4>
-                            <p>Grilled bread, toamtoes, basil, balsamic glaze</p>
-                            <span>$6.99</span>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-                        <img src="../assets/images/TSA_STUFFED_MUSH.jpg" alt="Stuffed Mushrooms">
-                        <div class="details">
-                            <h4>Stuffed Mushrooms</h4>
-                            <p>Mushrooms, spinach, cheese, herbs</p>
-                            <span>$7.99</span>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-                        <img src="../assets/images/TSA_GUAC.jpg" alt="Guacamole">
-                        <div class="details">
-                            <h4>Guacamole</h4>
-                            <p>Fresh avocado, lime, cilantro, tomatoes, tortilla chips.</p>
-                            <span>$5.99</span>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-                        <img src="../assets/images/TSA_SPRING.jpg" alt="Vegetarian Spring Rolls">
-                        <div class="details">
-                            <h4>Vegetarian Spring Rolls</h4>
-                            <p>Rice paper rolls, veggies, dipping sauce.</p>
-                            <span>$6.49</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="menu-category" id="soup-salad">
-                <h3>Soup or Salad</h3>
-                <div class="menu-grid">
-                    <div class="menu-item">
-                        <img src="../assets/images/TSA_CEASAR.jpg" alt="Caesar Salad">
-                        <div class="details">
-                            <h4>Caesar Salad</h4>
-                            <p>Crisp lettuce, parmesan cheese, and Caesar dressing.</p>
-                            <span>$8.99</span>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-                        <img src="../assets/images/TSA_VEGE_SOUP.jpg" alt="Vegetable Soup">
-                        <div class="details">
-                            <h4>Vegetable Soup</h4>
-                            <p>Hearty vegetable soup with a savory broth.</p>
-                            <span>$7.49</span>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-                        <img src="../assets/images/TSA_GREEK_SALAD.jpeg" alt="Greek Salad">
-                        <div class="details">
-                            <h4>Greek Salad</h4>
-                            <p>Tomatoes, cucumbers, olives, feta cheese, olive oil dressing.</p>
-                            <span>$9.49</span>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-                        <img src="../assets/images/TSA_MINESTROME_SOUP.jpg" alt="Minestrone Soup">
-                        <div class="details">
-                            <h4>Minestrone Soup</h4>
-                            <p>Tomatoes, beans, pasta, and vegetables.</p>
-                            <span>$7.99</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="menu-category" id="main-courses">
-                <h3>Main Courses</h3>
-                <div class="menu-grid">
-                    <div class="menu-item">
-                        <img src="../assets/images/TSA_VEGE_STIR.jpg" alt="Vegetable Stir-Fry">
-                        <div class="details">
-                            <h4>Vegetable Stir-Fry</h4>
-                            <p>Fresh vegetables, tangy soy-ginger sauce.</p>
-                            <span>$12.99</span>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-                        <img src="../assets/images/TSA_PARMESAN_EGGPLANT.jpg" alt="Eggplant Parmesan">
-                        <div class="details">
-                            <h4>Eggplant Parmesan</h4>
-                            <p>Breaded eggplant, marinara sauce, mozzarella.</p>
-                            <span>$13.99</span>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-                        <img src="../assets/images/TSA_SPAGHETTI_PESTO.jpg" alt="Spaghetti Pesto">
-                        <div class="details">
-                            <h4>Spaghetti Pesto</h4>
-                            <p>Spaghetti noodles, fresh basil, pesto, pine nuts.</p>
-                            <span>$14.99</span>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-                        <img src="../assets/images/TSA_VEGE_BURGER.jpeg" alt="Vegetable Burger">
-                        <div class="details">
-                            <h4>Vegetable Burger</h4>
-                            <p>veggie patty, lettuce, tomato, vegan mayo.</p>
-                            <span>$11.49</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="menu-category" id="desserts">
-                <h3>Desserts</h3>
-                <div class="menu-grid">
-                    <div class="menu-item">
-                        <img src="../assets/images/TSA_CHOC_CAKE.jpg" alt="Chocolate Cake">
-                        <div class="details">
-                            <h4>Chocolate Cake</h4>
-                            <p>chocolate cake, reamy frosting.</p>
-                            <span>$5.99</span>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-                        <img src="../assets/images/TSA_FRUIT_TART.avif" alt="Fruit Tart">
-                        <div class="details">
-                            <h4>Fruit Tart</h4>
-                            <p>Fresh fruit, buttery tart crust, light glaze.</p>
-                            <span>$6.49</span>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-                        <img src="../assets/images/TSA_CHOC_MOUSSE.jpg" alt="Vegan Chocolate Mousse">
-                        <div class="details">
-                            <h4>Vegan Chocolate Mousse</h4>
-                            <p>chocolate mousse, avocado, coconut milk.</p>
-                            <span>$6.99</span>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-                        <img src="../assets/images/TSA-FRUIT.jpg" alt="Apple Crumble">
-                        <div class="details">
-                            <h4>Apple Crumble</h4>
-                            <p>Baked apples, cinnamon, crumbly oat topping.</p>
-                            <span>$5.49</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-    </div>
-  <!-- Scripts -->
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-  <script src="assets/js/isotope.min.js"></script>
-  <script src="assets/js/owl-carousel.js"></script>
-
-  <script src="assets/js/tabs.js"></script>
-  <script src="assets/js/popup.js"></script>
-  <script src="assets/js/custom.js"></script>
-
   </body>
 </html>
