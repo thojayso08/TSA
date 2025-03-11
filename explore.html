@@ -384,22 +384,27 @@
       </section>
     </div>
 
-    <!-- Scripts -->
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script>
-      function showCategory(categoryId) {
-        // Hide all menu categories
-        let categories = document.querySelectorAll('.menu-category');
-        categories.forEach(category => category.classList.remove('active'));
+   <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/animation.js"></script>
+  <script src="assets/js/imagesloaded.js"></script>
+  <script src="assets/js/custom.js"></script>
 
-        // Show the selected category
-        let selectedCategory = document.getElementById(categoryId);
-        if (selectedCategory) {
-          selectedCategory.classList.add('active');
-        }
+  <script>
+    function showCategory(categoryId) {
+      // Hide all menu categories
+      let categories = document.querySelectorAll('.menu-category');
+      categories.forEach(category => category.classList.remove('active'));
+
+      // Show the selected category
+      let selectedCategory = document.getElementById(categoryId);
+      if (selectedCategory) {
+        selectedCategory.classList.add('active');
       }
-    </script>
+    }
+  </script>
   </body>
 </html>
