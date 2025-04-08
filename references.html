@@ -2,23 +2,45 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta charset="utf-8"/>
-  <meta name="generator" content="pdf2htmlEX"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
   <title>References</title>
   <style type="text/css">
-    body {
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
       height: 100vh;
-      background-color: #f4fdf4; /* soft greenish background */
       font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
-      color: #2e5939; /* earthy green */
       display: flex;
       justify-content: center;
       align-items: center;
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+      color: #f4fdf4;
+    }
+
+    /* Dark overlay tint */
+    body::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5); /* Darken the background */
+      z-index: 0;
     }
 
     .link-container {
+      position: relative;
+      z-index: 1;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
       display: flex;
       flex-direction: column;
       gap: 20px;
@@ -26,14 +48,14 @@
     }
 
     a {
-      color: #2e5939;
+      color: #f4fdf4;
       text-decoration: none;
       font-size: 1.25rem;
       transition: color 0.3s ease;
     }
 
     a:hover {
-      color: #4ba173; /* lighter green on hover */
+      color: #b8e2c8;
     }
   </style>
 </head>
