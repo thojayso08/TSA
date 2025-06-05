@@ -666,12 +666,8 @@ Header Style
   .background-header.header-sticky .nav {
     margin-top: 70px !important;
   }
-  .header-area .main-nav .nav li:first-child {
-    border-top: 1px solid #eee;
-  }
   .header-area .main-nav .nav li {
     width: 100%;
-    border-bottom: 1px solid #eee;
     padding-left: 0px !important;
     padding-right: 0px !important;
   }
@@ -683,7 +679,6 @@ Header Style
     color: #1e1e1e !important;
   }
   .header-area .main-nav .nav li a:hover {
-    background: #fff !important;
     color: #42901b!important;
   }
   .header-area .main-nav .nav li.has-sub ul.sub-menu {
