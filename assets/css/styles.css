@@ -595,7 +595,7 @@ Header Style
 
 @media (max-width: 992px) {
   html, body {
-    width: 50%;
+    width: 100%;
   }
   .header-area {
     top: 0;
