@@ -581,10 +581,6 @@ Header Style
     top: 0;
     width: 100%;
   }
-  .header-area .main-nav {
-    background-color: transparent;
-    border-radius: 65px;
-  }
   .header-area .main-nav .nav {
     height: auto;
     flex-basis: 100%;
